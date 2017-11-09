@@ -1,7 +1,7 @@
-import NTask from "../task-master.js";
+import TaskMaster from "../task-master.js";
 import Template from "../templates/signup.js";
 
-class Signup extends NTask {
+class Signup extends TaskMaster {
     constructor(body) {
         super();
         this.body = body;

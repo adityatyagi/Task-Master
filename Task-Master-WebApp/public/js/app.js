@@ -660,8 +660,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // The "body" is the DOM object from the tag <main> or <footer>
 
-var Signin = function (_NTask) {
-    _inherits(Signin, _NTask);
+var Signin = function (_TaskMaster) {
+    _inherits(Signin, _TaskMaster);
 
     function Signin(body) {
         _classCallCheck(this, Signin);
@@ -755,8 +755,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Signup = function (_NTask) {
-    _inherits(Signup, _NTask);
+var Signup = function (_TaskMaster) {
+    _inherits(Signup, _TaskMaster);
 
     function Signup(body) {
         _classCallCheck(this, Signup);
@@ -838,36 +838,36 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // This will help us create the component classes
 
 
-var NTask = function (_TinyEmitter) {
-    _inherits(NTask, _TinyEmitter);
+var TaskMaster = function (_TinyEmitter) {
+    _inherits(TaskMaster, _TinyEmitter);
 
-    function NTask() {
-        _classCallCheck(this, NTask);
+    function TaskMaster() {
+        _classCallCheck(this, TaskMaster);
 
-        var _this = _possibleConstructorReturn(this, (NTask.__proto__ || Object.getPrototypeOf(NTask)).call(this));
+        var _this = _possibleConstructorReturn(this, (TaskMaster.__proto__ || Object.getPrototypeOf(TaskMaster)).call(this));
 
         _this.request = _browserRequest2.default;
         _this.URL = "https://localhost:3000";
         return _this;
     }
 
-    return NTask;
+    return TaskMaster;
 }(_tinyEmitter2.default);
 
-module.exports = NTask;
+module.exports = TaskMaster;
 
 },{"browser-request":1,"tiny-emitter":2}],7:[function(require,module,exports){
 "use strict";
 
 exports.render = function () {
-  return "<form>\n<div class=\"list\">\n<label class=\"item item-input item-stacked-label\">\n<span class=\"input-label\">Email</span>\n<input type=\"text\" data-email>\n</label>\n<label class=\"item item-input item-stacked-label\">\n<span class=\"input-label\">Password</span>\n <input type=\"password\" data-password>\n </label>\n </div>\n <div class=\"padding\">\n <button class=\"button button-positive button-block\">\n <i class=\"ion-home\"></i> Login\n </button>\n </div>\n </form>\n <div class=\"padding\">\n <button class=\"button button-block\" data-signup>\n <i class=\"ion-person-add\"></i> Sign up\n </button>\n </div>";
+    return "<form>\n            <div class=\"list\">\n                <label class=\"item item-input item-stacked-label\">\n                    <span class=\"input-label\">Email</span>\n                    <input type=\"text\" data-email>\n                </label>\n                <label class=\"item item-input item-stacked-label\">\n                    <span class=\"input-label\">Password</span>\n                    <input type=\"password\" data-password>\n                </label>\n            </div>\n            <div class=\"padding\">\n                <button class=\"button button-positive button-block\">\n                    <i class=\"ion-home\"></i> Login\n                </button>\n            </div>\n            </form>\n            <div class=\"padding\">\n                <button class=\"button button-block\" data-signup>\n                    <i class=\"ion-person-add\"></i> Sign up\n                </button>\n            </div>";
 };
 
 },{}],8:[function(require,module,exports){
 "use strict";
 
 exports.render = function () {
-  return "<form>\n<div class=\"list\">\n<label class=\"item item-input item-stacked-label\">\n<span class=\"input-label\">Name</span>\n<input type=\"text\" data-name>\n</label>\n<label class=\"item item-input item-stacked-label\">\n<span class=\"input-label\">Email</span>\n <input type=\"text\" data-email>\n </label>\n <label class=\"item item-input item-stacked-label\">\n <span class=\"input-label\">Password</span>\n <input type=\"password\" data-password>\n </label>\n </div>\n <div class=\"padding\">\n <button class=\"button button-positive button-block\">\n <i class=\"ion-thumbsup\"></i> Register\n </button>\n </div>\n </form>";
+    return "<form>\n            <div class=\"list\">\n                <label class=\"item item-input item-stacked-label\">\n                    <span class=\"input-label\">Name</span>\n                    <input type=\"text\" data-name>\n                </label>\n                <label class=\"item item-input item-stacked-label\">\n                    <span class=\"input-label\">Email</span>\n                    <input type=\"text\" data-email>\n                </label>\n                <label class=\"item item-input item-stacked-label\">\n                    <span class=\"input-label\">Password</span>\n                    <input type=\"password\" data-password>\n                </label>\n            </div>\n            <div class=\"padding\">\n                <button class=\"button button-positive button-block\">\n                    <i class=\"ion-thumbsup\"></i> Register\n                </button>\n            </div>\n            </form>";
 };
 
 },{}],9:[function(require,module,exports){

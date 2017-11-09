@@ -4,10 +4,10 @@
 
 // The "body" is the DOM object from the tag <main> or <footer>
 
-import NTask from "../task-master.js";
+import TaskMaster from "../task-master.js";
 import Template from "../templates/signin.js";
 
-class Signin extends NTask {
+class Signin extends TaskMaster {
     constructor(body) {
         super();
         this.body = body;
