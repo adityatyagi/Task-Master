@@ -6,7 +6,7 @@
 import TinyEmitter from "tiny-emitter";
 import request from "browser-request";
 
-class TaskMaster extends TinyEmitter {
+class NTask extends TinyEmitter {
     constructor() {
         super();
         this.request = request;
@@ -14,4 +14,4 @@ class TaskMaster extends TinyEmitter {
     }
 }
 
-module.exports = TaskMaster;
+module.exports = NTask;

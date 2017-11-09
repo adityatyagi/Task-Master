@@ -4,11 +4,10 @@
 
 // The "body" is the DOM object from the tag <main> or <footer>
 
-import TaskMaster from "../task-master.js";
+import NTask from "../task-master.js";
 import Template from "../templates/signin.js";
 
-class Signin extends TaskMaster {
-
+class Signin extends NTask {
     constructor(body) {
         super();
         this.body = body;
@@ -19,13 +18,15 @@ class Signin extends TaskMaster {
         this.body.querySelector("[data-email]").focus();
         this.addEventListener();
     }
-
+    addEventListener() {
+        this.formSubmit();
+        this.signupClick();
+    }
     formSubmit() {
         const form = this.body.querySelector("form");
 
         form.addEventListener("submit", (e) => {
-            e.preventDefault(); // don't let the form to be submitted
-
+            e.preventDefault();
             const email = e.target.querySelector("[data-email]");
             const password = e.target.querySelector("[data-password]");
 
