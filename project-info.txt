@@ -1,0 +1,11 @@
+Our application is going to be a simple task manager that will be divided into two
+projects: API and web app.
+Our API will be called NTask (Node Task) and it will have the following features:
+• List of tasks.
+• Create, delete, and update a task.
+• Create, delete, and update user data.
+• User authentication.
+• API documentation page.
+
+The application has two models: Users and Tasks
+The reltionship => Users 1:N Tasks
