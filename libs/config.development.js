@@ -1,5 +1,6 @@
 // database connection to the api
 
+import logger from "./logger.js";
 
 module.exports = {
     database: "task-master",
@@ -8,6 +9,9 @@ module.exports = {
     params: {
         dialect: "sqlite",
         storage: "task-master.sqlite",
+        logging: (sql) => {
+            logger.info(`[${new Date()}] ${sql}`);
+        },
         define: {
             underscored: true // standardizes the table field's names to appear in lowercase with _
         }
